@@ -117,7 +117,7 @@ int ptcounter=0;
                     }
                 }
 		ptcounter++;
-//		cout<<"ptcounter"<<ptcounter<<endl;
+
             }
 
             if(canLabel&&image[CrtX][CrtY]!=0) {
@@ -132,7 +132,7 @@ int ptcounter=0;
 
        cv::addWeighted(duplImage,0.4,testDuplicate,0.6,0,dstImage);
 
-        //image.release();
+    
         duplImage.release();
         testDuplicate.release();
         return dstImage;
